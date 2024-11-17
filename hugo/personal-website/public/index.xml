@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jose N Sosa</title>
+    <link>https://josensosa.com/index.html</link>
+    <description>Hi, thank you for checking out my site On this site, use the menu on the left to navigate all content.&#xA;At the moment, I am currently focused on the Free RHCSA Course.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 Nov 2024 14:57:58 -0500</lastBuildDate>
+    <atom:link href="https://josensosa.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>RHCSA EX200 Course</title>
+      <link>https://josensosa.com/rhcsa-ex200-course/index.html</link>
+      <pubDate>Sat, 16 Nov 2024 14:57:58 -0500</pubDate>
+      <guid>https://josensosa.com/rhcsa-ex200-course/index.html</guid>
+      <description>List of all course material and videos free.&#xA;Day 1: Intro How I Passed the RHCSA EX200 in 2024 Lab 1: Install Lab 2: Terminal and Command Syntax Lab 3: Directory Structure and Filesystem Lab 4: How to Get Help in Linux</description>
+    </item>
+  </channel>
+</rss>
