@@ -20,7 +20,7 @@
       <link>https://josensosa.com/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html</link>
       <pubDate>Sat, 16 Nov 2024 14:57:58 -0500</pubDate>
       <guid>https://josensosa.com/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html</guid>
-      <description>Objective Focus Understand and use essential tools Locate, read, and use system documentation including man, info, and files in /usr/share/doc Getting help in a Red Hat Linux environment, or any Linux OS, starts with your end goal.&#xA;For example, I need to know the last created directory in user learners home directory. Let us create a new directory&#xA;$ mkdir newdir First, we learned about $ ls in Lab 2, that will help us list out the files in the directory. [learner@server1 ~]$ ls Desktop Documents Downloads Music Pictures Public Templates Videos</description>
+      <description>Objective Focus Understand and use essential tools Locate, read, and use system documentation including man, info, and files in /usr/share/doc Getting help in a Red Hat Linux environment, or any Linux OS, starts with your end goal.&#xA;For example, I need to know the last created directory in user learners home directory. Let us create a new directory</description>
     </item>
     <item>
       <title>Lab 3: Directory Structure and Filesystem</title>

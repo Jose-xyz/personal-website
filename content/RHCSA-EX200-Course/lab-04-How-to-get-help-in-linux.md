@@ -4,6 +4,7 @@ draft = false
 title = 'Lab 4: How to Get Help in Linux'
 +++
 
+{{< youtube JoC8LjqM5Ao >}}
 
 ##### Objective Focus
 **Understand and use essential tools**
