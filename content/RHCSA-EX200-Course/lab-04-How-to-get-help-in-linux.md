@@ -83,6 +83,15 @@ Whenever the man pages and comman line tools, be sure to search here for more su
 {{< highlight type="sh" warp="true" >}} $ ls -l /usr/share/doc {{< /highlight     >}}
 
 
+#### Info Pages
+- Info pages are a great resource and provide a lot of details
+- Getting to info pages are the same as getting to man pages
+
+{{< highlight type="sh" warp="true" >}} $ info ls {{< /highlight     >}}
+
+Press 'h' to get help on info pages and how to navigate
+
+
 That is it for Lab 4, man pages and help options should suffice for the EX200 and we will continue use them through out the rest of the course. 
 
 Trying to remember every command and avaliable option is impossible, so learning how to be resourceful is the key to completing every task.
