@@ -96,3 +96,11 @@ Press 'h' to get help on info pages and how to navigate
 That is it for Lab 4, man pages and help options should suffice for the EX200 and we will continue use them through out the rest of the course. 
 
 Trying to remember every command and avaliable option is impossible, so learning how to be resourceful is the key to completing every task.
+
+I am going to include the docs availiable on Red Hats website [here](https://docs.redhat.com/en).
+
+
+
+Read them for a cross reference to the man pages and help options. 
+
+The most important take away is getting comfortable reaching for man pages and internal system tools before googling and reaching out to the internet. :wq
