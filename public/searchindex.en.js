@@ -9,19 +9,27 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "RHCSA EX200 Course",
+    "content": "Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories VIM is going be your best friend when it comes to working with text files! Vim’s Official Website",
+    "description": "Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories VIM is going be your best friend when it comes to working with text files! Vim’s Official Website",
+    "tags": [],
+    "title": "Lab 5: Working With Files \u0026 Directories",
+    "uri": "/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html"
+  },
+  {
+    "breadcrumb": "",
+    "content": "List of all course material and videos free.\nDay 1: Intro How I Passed the RHCSA EX200 in 2024 Lab 1: Install Lab 2: Terminal and Command Syntax Lab 3: Directory Structure and Filesystem Lab 4: How to Get Help in Linux Lab 5: Working With Files \u0026 Directories",
+    "description": "List of all course material and videos free.\nDay 1: Intro How I Passed the RHCSA EX200 in 2024 Lab 1: Install Lab 2: Terminal and Command Syntax Lab 3: Directory Structure and Filesystem Lab 4: How to Get Help in Linux Lab 5: Working With Files \u0026 Directories",
+    "tags": [],
+    "title": "RHCSA EX200 Course",
+    "uri": "/rhcsa-ex200-course/index.html"
+  },
+  {
+    "breadcrumb": "RHCSA EX200 Course",
     "content": "Objective Focus Understand and use essential tools Locate, read, and use system documentation including man, info, and files in /usr/share/doc Getting help in a Red Hat Linux environment, or any Linux OS, starts with your end goal.\nFor example, I need to know the last created directory in user learners home directory. Let us create a new directory\n$ mkdir newdir First, we learned about $ ls in Lab 2, that will help us list out the files in the directory. [learner@server1 ~]$ ls Desktop Documents Downloads Music Pictures Public Templates Videos $ ls alone does not meet our end goal.\nFrom here we have several options\nHelp option, usually an option like $ command -h --help Not all commands have the -h, –help option but it is always worth checking Sometimes, just typing in a error with a command will bring this up Next are Man Pages, short for Manual Pages.\nUsing man pages is going to be essential to passing the EX200. These manual pages are going to be avaliable to you during the exam. To get the manual page on $ ls, we use the systax $ man “command”\n[learner@server1 ~]$ man ls This brings up the manual page for $ ls, the table below shows us how to navigate a man page. Buttons What they do Up/Down Arrow Move view of page up and down Spacebar Move down one page g/G Move to top man page/ Move to bottom of man page q exit the man page /pattern Searches forward in man page ?pattern Searches forward in man page n/N Find next/previous pattern match h help with summary of commands Lets look at some available options, below are the ones that stand out for our goal -l use a long listing format -t sort by time, newest first; see --time How to look for a command searching man pages $ man -k \"keyword\" To search man pages for keywords [learner@server1 ~]$ man -k list list: nothing appropriate. If the above happens use the following command to index the man pages on the system.\n$ mandb The /usr/share/doc directory This directory contains an extensive list of documents related to software and programs on the system. Whenever the man pages and comman line tools, be sure to search here for more supporting information\n$ ls -l /usr/share/doc Info Pages Info pages are a great resource and provide a lot of details Getting to info pages are the same as getting to man pages $ info ls Press ‘h’ to get help on info pages and how to navigate\nThat is it for Lab 4, man pages and help options should suffice for the EX200 and we will continue use them through out the rest of the course.\nTrying to remember every command and avaliable option is impossible, so learning how to be resourceful is the key to completing every task.\nI am going to include the docs availiable on Red Hats website here.\nRead them for a cross reference to the man pages and help options.\nThe most important take away is getting comfortable reaching for man pages and internal system tools before googling and reaching out to the internet. :wq",
     "description": "Objective Focus Understand and use essential tools Locate, read, and use system documentation including man, info, and files in /usr/share/doc Getting help in a Red Hat Linux environment, or any Linux OS, starts with your end goal.\nFor example, I need to know the last created directory in user learners home directory. Let us create a new directory",
     "tags": [],
     "title": "Lab 4: How to Get Help in Linux",
     "uri": "/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html"
-  },
-  {
-    "breadcrumb": "",
-    "content": "List of all course material and videos free.\nDay 1: Intro How I Passed the RHCSA EX200 in 2024 Lab 1: Install Lab 2: Terminal and Command Syntax Lab 3: Directory Structure and Filesystem Lab 4: How to Get Help in Linux",
-    "description": "List of all course material and videos free.\nDay 1: Intro How I Passed the RHCSA EX200 in 2024 Lab 1: Install Lab 2: Terminal and Command Syntax Lab 3: Directory Structure and Filesystem Lab 4: How to Get Help in Linux",
-    "tags": [],
-    "title": "RHCSA EX200 Course",
-    "uri": "/rhcsa-ex200-course/index.html"
   },
   {
     "breadcrumb": "RHCSA EX200 Course",
