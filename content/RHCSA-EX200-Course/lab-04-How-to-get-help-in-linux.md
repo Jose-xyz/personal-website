@@ -2,6 +2,7 @@
 date = '2024-11-16T14:57:58-05:00'
 draft = false
 title = 'Lab 4: How to Get Help in Linux'
+weight =  6
 +++
 
 {{< youtube JoC8LjqM5Ao >}}

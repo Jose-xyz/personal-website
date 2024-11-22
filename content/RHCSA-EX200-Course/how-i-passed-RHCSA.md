@@ -2,6 +2,7 @@
 date = '2024-11-14T12:31:52-05:00'
 draft = false
 title = 'How I Passed the RHCSA EX200 in 2024'
+weight = 1
 +++
 
 {{< youtube c-7sX_WBDWk >}}

@@ -2,6 +2,7 @@
 date = '2024-11-12T14:47:28-05:00'
 draft = false
 title = 'Day 1: Intro'
+weight = 2
 +++
 
 {{< youtube FtIuyt0dYpE >}}

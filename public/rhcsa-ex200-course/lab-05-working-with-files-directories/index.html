@@ -5,36 +5,40 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.138.0">
     <meta name="generator" content="Relearn 7.1.1">
-    <meta name="description" content="Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories VIM is going be your best friend when it comes to working with text files! Vim’s Official Website">
+    <meta name="description" content="Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories all the time. In RHEL, most of our time will be spent with regular files and directories.
+Files may contain text, a script, or binary data Directories are containers for files and other directories (sub-directories) $ stat &lt;file or dir&gt; Try using stat on a file and a directory File Editing VIM is going be your best friend when it comes to working with text files! Vim’s Official Website">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Lab 5: Working With Files & Directories :: Jose N Sosa">
-    <meta name="twitter:description" content="Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories VIM is going be your best friend when it comes to working with text files! Vim’s Official Website">
+    <meta name="twitter:description" content="Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories all the time. In RHEL, most of our time will be spent with regular files and directories.
+Files may contain text, a script, or binary data Directories are containers for files and other directories (sub-directories) $ stat &lt;file or dir&gt; Try using stat on a file and a directory File Editing VIM is going be your best friend when it comes to working with text files! Vim’s Official Website">
     <meta property="og:url" content="https://josensosa.com/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html">
     <meta property="og:site_name" content="Jose N Sosa">
     <meta property="og:title" content="Lab 5: Working With Files & Directories :: Jose N Sosa">
-    <meta property="og:description" content="Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories VIM is going be your best friend when it comes to working with text files! Vim’s Official Website">
+    <meta property="og:description" content="Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories all the time. In RHEL, most of our time will be spent with regular files and directories.
+Files may contain text, a script, or binary data Directories are containers for files and other directories (sub-directories) $ stat &lt;file or dir&gt; Try using stat on a file and a directory File Editing VIM is going be your best friend when it comes to working with text files! Vim’s Official Website">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="RHCSA EX200 Course">
     <meta property="article:published_time" content="2024-11-20T22:15:37-05:00">
     <meta property="article:modified_time" content="2024-11-20T22:15:37-05:00">
     <meta itemprop="name" content="Lab 5: Working With Files & Directories :: Jose N Sosa">
-    <meta itemprop="description" content="Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories VIM is going be your best friend when it comes to working with text files! Vim’s Official Website">
+    <meta itemprop="description" content="Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories all the time. In RHEL, most of our time will be spent with regular files and directories.
+Files may contain text, a script, or binary data Directories are containers for files and other directories (sub-directories) $ stat &lt;file or dir&gt; Try using stat on a file and a directory File Editing VIM is going be your best friend when it comes to working with text files! Vim’s Official Website">
     <meta itemprop="datePublished" content="2024-11-20T22:15:37-05:00">
     <meta itemprop="dateModified" content="2024-11-20T22:15:37-05:00">
-    <meta itemprop="wordCount" content="41">
+    <meta itemprop="wordCount" content="116">
     <title>Lab 5: Working With Files &amp; Directories :: Jose N Sosa</title>
-    <link href="/css/fontawesome-all.min.css?1732161285" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1732161285" rel="stylesheet"></noscript>
-    <link href="/css/nucleus.css?1732161285" rel="stylesheet">
-    <link href="/css/auto-complete.css?1732161285" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1732161285" rel="stylesheet"></noscript>
-    <link href="/css/perfect-scrollbar.min.css?1732161285" rel="stylesheet">
-    <link href="/css/fonts.css?1732161285" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1732161285" rel="stylesheet"></noscript>
-    <link href="/css/theme.css?1732161285" rel="stylesheet">
-    <link href="/css/theme-zen-auto.css?1732161285" rel="stylesheet" id="R-variant-style">
-    <link href="/css/chroma-zen-auto.css?1732161285" rel="stylesheet" id="R-variant-chroma-style">
-    <link href="/css/print.css?1732161285" rel="stylesheet" media="print">
-    <script src="/js/variant.js?1732161285"></script>
+    <link href="/css/fontawesome-all.min.css?1732250689" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1732250689" rel="stylesheet"></noscript>
+    <link href="/css/nucleus.css?1732250689" rel="stylesheet">
+    <link href="/css/auto-complete.css?1732250689" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1732250689" rel="stylesheet"></noscript>
+    <link href="/css/perfect-scrollbar.min.css?1732250689" rel="stylesheet">
+    <link href="/css/fonts.css?1732250689" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fonts.css?1732250689" rel="stylesheet"></noscript>
+    <link href="/css/theme.css?1732250689" rel="stylesheet">
+    <link href="/css/theme-zen-auto.css?1732250689" rel="stylesheet" id="R-variant-style">
+    <link href="/css/chroma-zen-auto.css?1732250689" rel="stylesheet" id="R-variant-chroma-style">
+    <link href="/css/print.css?1732250689" rel="stylesheet" media="print">
+    <script src="/js/variant.js?1732250689"></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.relBasePath='..\/..';
@@ -72,13 +76,14 @@
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/rhcsa-ex200-course/index.html"><span itemprop="name">RHCSA EX200 Course</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Lab 5: Working With Files &amp; Directories</span><meta itemprop="position" content="2"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">front page</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/rhcsa-ex200-course/index.html"><span itemprop="name">RHCSA EX200 Course</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Lab 5: Working With Files &amp; Directories</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/rhcsa-ex200-course/lab01-install/index.html" title="Lab 1: Install (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html" title="Lab 4: How to Get Help in Linux (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html" title="Lab 4: How to Get Help in Linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -113,10 +118,22 @@
 <dl>
 <dt><strong>Understand and use essential tools</strong></dt>
 <dd>Create and edit text files</dd>
-<dd>Create, delete, copy, and move files and directories</dd>
+<dd>Create, delete, copy, and move files and directories all the time.</dd>
 </dl>
-<h5 id="vim-is-going-be-your-best-friend-when-it-comes-to-working-with-text-files">VIM is going be your best friend when it comes to working with text files!</h5>
+<p>In RHEL, most of our time will be spent with regular files and directories.</p>
+<ul>
+<li>Files may contain text, a script, or binary data</li>
+<li>Directories are containers for files and other directories (sub-directories)</li>
+</ul>
+<dl>
+<dt><div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ stat &lt;file or dir&gt;</span></span></code></pre></div>
+</dt>
+<dd>Try using stat on a file and a directory</dd>
+</dl>
+<h4 id="file-editing">File Editing</h4>
+<h6 id="vim-is-going-be-your-best-friend-when-it-comes-to-working-with-text-files">VIM is going be your best friend when it comes to working with text files!</h6>
 <p><a href="https://www.vim.org/" rel="external" target="_blank">Vim&rsquo;s Official Website</a></p>
+<p>Vim is the text editor to use here. There is nano as a second option but i am not going to cover that one.</p>
 
   <footer class="footline">
   </footer>
@@ -124,7 +141,7 @@
         </div>
       </main>
     </div>
-    <aside id="R-sidebar" class="default-animation">
+    <aside id="R-sidebar" class="default-animation showVisitedLinks">
       <div id="R-header-topbar" class="default-animation"></div>
       <div id="R-header-wrapper" class="default-animation">
         <div id="R-header" class="default-animation">
@@ -133,7 +150,7 @@ Jose N Sosa
           </a>
         </div>
         <script>
-          window.index_js_url="/searchindex.en.js?1732161285";
+          window.index_js_url="/searchindex.en.js?1732250689";
         </script>
         <search><form action="/search/index.html" method="get">
           <div class="searchbox default-animation">
@@ -146,12 +163,12 @@ Jose N Sosa
         <script>
           var contentLangs=['en'];
         </script>
-        <script src="/js/auto-complete.js?1732161285" defer></script>
-        <script src="/js/lunr/lunr.min.js?1732161285" defer></script>
-        <script src="/js/lunr/lunr.stemmer.support.min.js?1732161285" defer></script>
-        <script src="/js/lunr/lunr.multi.min.js?1732161285" defer></script>
-        <script src="/js/lunr/lunr.en.min.js?1732161285" defer></script>
-        <script src="/js/search.js?1732161285" defer></script>
+        <script src="/js/auto-complete.js?1732250689" defer></script>
+        <script src="/js/lunr/lunr.min.js?1732250689" defer></script>
+        <script src="/js/lunr/lunr.stemmer.support.min.js?1732250689" defer></script>
+        <script src="/js/lunr/lunr.multi.min.js?1732250689" defer></script>
+        <script src="/js/lunr/lunr.en.min.js?1732250689" defer></script>
+        <script src="/js/search.js?1732250689" defer></script>
       </div>
       <div id="R-homelinks" class="default-animation homelinks">
         <ul>
@@ -162,21 +179,21 @@ Jose N Sosa
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-shortcutmenu-home" class="R-sidebarmenu">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="parent " data-nav-id="/rhcsa-ex200-course/index.html"><a class="padding" href="/rhcsa-ex200-course/index.html">RHCSA EX200 Course</a><ul id="R-subsections-2342a0bf1f9e2029569c944b12ca15fe" class="collapsible-menu">
-            <li class="" data-nav-id="/rhcsa-ex200-course/lab01-install/index.html"><a class="padding" href="/rhcsa-ex200-course/lab01-install/index.html">Lab 1: Install</a></li>
-            <li class="active " data-nav-id="/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html">Lab 5: Working With Files &amp; Directories</a></li>
-            <li class="" data-nav-id="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html">Lab 4: How to Get Help in Linux</a></li>
-            <li class="" data-nav-id="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html">Lab 3: Directory Structure and Filesystem</a></li>
-            <li class="" data-nav-id="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html"><a class="padding" href="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html">How I Passed the RHCSA EX200 in 2024</a></li>
-            <li class="" data-nav-id="/rhcsa-ex200-course/lab02-termandcommands/index.html"><a class="padding" href="/rhcsa-ex200-course/lab02-termandcommands/index.html">Lab 2: Terminal and Command Syntax</a></li>
-            <li class="" data-nav-id="/rhcsa-ex200-course/day-1-intro/index.html"><a class="padding" href="/rhcsa-ex200-course/day-1-intro/index.html">Day 1: Intro</a></li></ul></li>
+            <li class="parent " data-nav-id="/rhcsa-ex200-course/index.html"><a class="padding" href="/rhcsa-ex200-course/index.html">RHCSA EX200 Course<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2342a0bf1f9e2029569c944b12ca15fe" class="collapsible-menu">
+            <li class="" data-nav-id="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html"><a class="padding" href="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html">How I Passed the RHCSA EX200 in 2024<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/rhcsa-ex200-course/day-1-intro/index.html"><a class="padding" href="/rhcsa-ex200-course/day-1-intro/index.html">Day 1: Intro<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/rhcsa-ex200-course/lab01-install/index.html"><a class="padding" href="/rhcsa-ex200-course/lab01-install/index.html">Lab 1: Install<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/rhcsa-ex200-course/lab02-termandcommands/index.html"><a class="padding" href="/rhcsa-ex200-course/lab02-termandcommands/index.html">Lab 2: Terminal and Command Syntax<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html">Lab 3: Directory Structure and Filesystem<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html">Lab 4: How to Get Help in Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="active " data-nav-id="/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html">Lab 5: Working With Files &amp; Directories<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
     
-        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter"></div>
+        <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter"></div>
         <div id="R-menu-footer">
-          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showFooter">
-          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch">
+          <hr class="padding default-animation footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showVariantSwitch showVisitedLinks showFooter">
+          <div id="R-prefooter" class="footerLangSwitch footerVariantSwitch footerVisitedLinks showVariantSwitch showVisitedLinks">
             <ul>
               <li id="R-select-language-container" class="footerLangSwitch">
                 <div class="padding menu-control">
@@ -207,7 +224,7 @@ Jose N Sosa
                 </div>
                 <script>window.variants && variants.markSelectedVariant();</script>
               </li>
-              <li class="footerVisitedLinks">
+              <li class="footerVisitedLinks showVisitedLinks">
                 <div class="padding menu-control">
                   <i class="fa-fw fas fa-history"></i>
                   <span>&nbsp;</span>
@@ -219,14 +236,14 @@ Jose N Sosa
               </li>
             </ul>
           </div>
-          <div id="R-footer" class="footerFooter showFooter">
-        <p>Built with <a href="https://github.com/McShelby/hugo-theme-relearn" title="love"><i class="fas fa-heart"></i></a> by <a href="https://gohugo.io/">Hugo</a></p>
+          <div id="R-footer" class="footerFooter showFooter"><br>
+
           </div>
         </div>
       </div>
     </aside>
-    <script src="/js/clipboard.min.js?1732161285" defer></script>
-    <script src="/js/perfect-scrollbar.min.js?1732161285" defer></script>
-    <script src="/js/theme.js?1732161285" defer></script>
+    <script src="/js/clipboard.min.js?1732250689" defer></script>
+    <script src="/js/perfect-scrollbar.min.js?1732250689" defer></script>
+    <script src="/js/theme.js?1732250689" defer></script>
   </body>
 </html>

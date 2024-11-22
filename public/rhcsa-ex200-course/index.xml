@@ -9,39 +9,25 @@
     <lastBuildDate>Wed, 20 Nov 2024 22:15:37 -0500</lastBuildDate>
     <atom:link href="https://josensosa.com/rhcsa-ex200-course/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Lab 1: Install</title>
-      <link>https://josensosa.com/rhcsa-ex200-course/lab01-install/index.html</link>
-      <pubDate>Tue, 12 Nov 2024 15:55:57 -0500</pubDate>
-      <guid>https://josensosa.com/rhcsa-ex200-course/lab01-install/index.html</guid>
-      <description>Lab Set up Type 2 Hypervisor&#xA;Virt-Manager, Oracle Virtualbox, Vmware Workstation We will use virt-manager on a Linux OS for this course&#xA;Please refer to respective documentation for your choice of type 2 virtualization&#xA;Preferred resources on host machine should be at least a dual-core processor, 64GB of free storage and 16GB of RAM</description>
-    </item>
-    <item>
-      <title>Lab 5: Working With Files &amp; Directories</title>
-      <link>https://josensosa.com/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html</link>
-      <pubDate>Wed, 20 Nov 2024 22:15:37 -0500</pubDate>
-      <guid>https://josensosa.com/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html</guid>
-      <description>Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories VIM is going be your best friend when it comes to working with text files! Vim’s Official Website</description>
-    </item>
-    <item>
-      <title>Lab 4: How to Get Help in Linux</title>
-      <link>https://josensosa.com/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html</link>
-      <pubDate>Sat, 16 Nov 2024 14:57:58 -0500</pubDate>
-      <guid>https://josensosa.com/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html</guid>
-      <description>Objective Focus Understand and use essential tools Locate, read, and use system documentation including man, info, and files in /usr/share/doc Getting help in a Red Hat Linux environment, or any Linux OS, starts with your end goal.&#xA;For example, I need to know the last created directory in user learners home directory. Let us create a new directory</description>
-    </item>
-    <item>
-      <title>Lab 3: Directory Structure and Filesystem</title>
-      <link>https://josensosa.com/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html</link>
-      <pubDate>Fri, 15 Nov 2024 11:01:51 -0500</pubDate>
-      <guid>https://josensosa.com/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html</guid>
-      <description>Display of Directory Structure using $Tree Command Edited ouput&#xA;[root@server1 /]# tree -d -L 2 . ├── afs ├── bin -&gt; usr/bin ├── boot │ ├── efi │ ├── grub2 │ └── loader ├── dev │ ├── block │ ├── bsg │ ├── bus │ ├── snd │ ├── vfio │ └── virtio-ports ├── etc │ ├── accountsservice │ ├── alsa │ ├── tmpfiles.d │ ├── tpm2-tss │ ├── tuned │ ├── udev │ └── yum.repos.d ├── home │ └── learner ├── lib -&gt; usr/lib ├── lib64 -&gt; usr/lib64 ├── media ├── mnt ├── opt ├── proc │ ├── driver │ ├── fs │ ├── irq │ ├── net -&gt; self/net │ ├── scsi │ ├── self -&gt; 2892 │ ├── sys │ ├── sysvipc │ ├── thread-self -&gt; 2892/task/2892 │ └── tty ├── root ├── run │ ├── share │ ├── src │ └── tmp -&gt; ../var/tmp └── var ├── adm ├── ftp ├── games “Everything is a File” In the linux/GNU operating system, eveything appears in some say in the file system.</description>
-    </item>
-    <item>
       <title>How I Passed the RHCSA EX200 in 2024</title>
       <link>https://josensosa.com/rhcsa-ex200-course/how-i-passed-rhcsa/index.html</link>
       <pubDate>Thu, 14 Nov 2024 12:31:52 -0500</pubDate>
       <guid>https://josensosa.com/rhcsa-ex200-course/how-i-passed-rhcsa/index.html</guid>
       <description>I passed the RHCSA Exam (EX200) in July of 2024.&#xA;Study Resources Link to RHEL 9 Iso&#xA;Link to RHCSA Exam Objectives&#xA;Link to videos course from Sander Van Vugt + his labs&#xA;Books I used Red Hat RHCSA 9 Cert Guide: EX200 - Sander Van Vugt Covers all objectives but Sander has some unique ways of accomplishing tasks. Example “Resetting root password” using init=/bin/bash instead of rd.break. RHCSA Red Hat Enterprise Linux 9 Certification Study Guide, Eighth Edition – Michael Jang Great labs but missing some details on certain objectives Great Online material! Docs and Exams An example of material not covered so well were Containers. There were not as many examples as Sander’s book or video course. RHCSA Red Hat Enterprise Linux 9: Training and Exam Preparation Guide (EX200), Third Edition – Asghar Ghori I did not use this book in my studies but looked at it after passing and wished I did! Technology for Lab Virt Manager I used virt-manager on a linux OS (RHEL 9 in this case) for my lab purposes. Most study materials suggest creating two VMs for study. Getting hand-ons practice was the most valuable component of my prep. I also had a dual monitor display but remember, you will only be allowed to use one monitor on exam day.</description>
+    </item>
+    <item>
+      <title>Day 1: Intro</title>
+      <link>https://josensosa.com/rhcsa-ex200-course/day-1-intro/index.html</link>
+      <pubDate>Tue, 12 Nov 2024 14:47:28 -0500</pubDate>
+      <guid>https://josensosa.com/rhcsa-ex200-course/day-1-intro/index.html</guid>
+      <description>The Start whoami Red Hat Certified System Administrator - July 2024&#xA;Creditial ID 240-141-275 Experienced IT Professional&#xA;Help Desk, Analyst, Technical Consultant, Support Specialist, Engineer Fan of Linux and the value it provides.&#xA;Who this course is for… Anyone who wants to learn about Linux with respect to Red Hat Enterprise Linux 9</description>
+    </item>
+    <item>
+      <title>Lab 1: Install</title>
+      <link>https://josensosa.com/rhcsa-ex200-course/lab01-install/index.html</link>
+      <pubDate>Tue, 12 Nov 2024 15:55:57 -0500</pubDate>
+      <guid>https://josensosa.com/rhcsa-ex200-course/lab01-install/index.html</guid>
+      <description>Lab Set up Type 2 Hypervisor&#xA;Virt-Manager, Oracle Virtualbox, Vmware Workstation We will use virt-manager on a Linux OS for this course&#xA;Please refer to respective documentation for your choice of type 2 virtualization&#xA;Preferred resources on host machine should be at least a dual-core processor, 64GB of free storage and 16GB of RAM</description>
     </item>
     <item>
       <title>Lab 2: Terminal and Command Syntax</title>
@@ -51,11 +37,25 @@
       <description>Objective Focus Understand and use essential tools Access a shell prompt and issue commands with correct syntax Official RHCSA EX200 Exam Objectives&#xA;In the video, I also include some setting changes that I found to be useful during my study time.&#xA;Mute the water drop sound</description>
     </item>
     <item>
-      <title>Day 1: Intro</title>
-      <link>https://josensosa.com/rhcsa-ex200-course/day-1-intro/index.html</link>
-      <pubDate>Tue, 12 Nov 2024 14:47:28 -0500</pubDate>
-      <guid>https://josensosa.com/rhcsa-ex200-course/day-1-intro/index.html</guid>
-      <description>The Start whoami Red Hat Certified System Administrator - July 2024&#xA;Creditial ID 240-141-275 Experienced IT Professional&#xA;Help Desk, Analyst, Technical Consultant, Support Specialist, Engineer Fan of Linux and the value it provides.&#xA;Who this course is for… Anyone who wants to learn about Linux with respect to Red Hat Enterprise Linux 9</description>
+      <title>Lab 3: Directory Structure and Filesystem</title>
+      <link>https://josensosa.com/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html</link>
+      <pubDate>Fri, 15 Nov 2024 11:01:51 -0500</pubDate>
+      <guid>https://josensosa.com/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html</guid>
+      <description>Display of Directory Structure using $Tree Command Edited ouput&#xA;[root@server1 /]# tree -d -L 2 . ├── afs ├── bin -&gt; usr/bin ├── boot │ ├── efi │ ├── grub2 │ └── loader ├── dev │ ├── block │ ├── bsg │ ├── bus │ ├── snd │ ├── vfio │ └── virtio-ports ├── etc │ ├── accountsservice │ ├── alsa │ ├── tmpfiles.d │ ├── tpm2-tss │ ├── tuned │ ├── udev │ └── yum.repos.d ├── home │ └── learner ├── lib -&gt; usr/lib ├── lib64 -&gt; usr/lib64 ├── media ├── mnt ├── opt ├── proc │ ├── driver │ ├── fs │ ├── irq │ ├── net -&gt; self/net │ ├── scsi │ ├── self -&gt; 2892 │ ├── sys │ ├── sysvipc │ ├── thread-self -&gt; 2892/task/2892 │ └── tty ├── root ├── run │ ├── share │ ├── src │ └── tmp -&gt; ../var/tmp └── var ├── adm ├── ftp ├── games “Everything is a File” In the linux/GNU operating system, eveything appears in some say in the file system.</description>
+    </item>
+    <item>
+      <title>Lab 4: How to Get Help in Linux</title>
+      <link>https://josensosa.com/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html</link>
+      <pubDate>Sat, 16 Nov 2024 14:57:58 -0500</pubDate>
+      <guid>https://josensosa.com/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html</guid>
+      <description>Objective Focus Understand and use essential tools Locate, read, and use system documentation including man, info, and files in /usr/share/doc Getting help in a Red Hat Linux environment, or any Linux OS, starts with your end goal.&#xA;For example, I need to know the last created directory in user learners home directory. Let us create a new directory</description>
+    </item>
+    <item>
+      <title>Lab 5: Working With Files &amp; Directories</title>
+      <link>https://josensosa.com/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html</link>
+      <pubDate>Wed, 20 Nov 2024 22:15:37 -0500</pubDate>
+      <guid>https://josensosa.com/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html</guid>
+      <description>Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories all the time. In RHEL, most of our time will be spent with regular files and directories.&#xA;Files may contain text, a script, or binary data Directories are containers for files and other directories (sub-directories) $ stat &lt;file or dir&gt; Try using stat on a file and a directory File Editing VIM is going be your best friend when it comes to working with text files! Vim’s Official Website</description>
     </item>
   </channel>
 </rss>

@@ -21,4 +21,7 @@ alwaysopen = true
 #collapsibleMenu = true
 #params.collapsibleMenu = true
 
-ordersectionsby = 'title'
+ordersectionsby = 'weight'
+
+[params]
+  showVisitedLinks = true

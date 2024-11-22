@@ -2,6 +2,7 @@
 date = '2024-11-12T16:15:41-05:00'
 draft = false
 title = 'Lab 2: Terminal and Command Syntax'
+weight = 4
 +++
 
 

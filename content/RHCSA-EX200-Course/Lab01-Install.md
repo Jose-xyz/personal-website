@@ -2,7 +2,7 @@
 date = '2024-11-12T15:55:57-05:00'
 draft = false
 title = 'Lab 1: Install'
-weight = 2
+weight = 3
 +++
 
 {{< youtube B5f0ZIe6Xas >}}

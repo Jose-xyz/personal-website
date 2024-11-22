@@ -2,6 +2,7 @@
 date = '2024-11-15T11:01:51-05:00'
 draft = false
 title = 'Lab 3: Directory Structure and Filesystem'
+weight =  5
 +++
 
 {{< youtube f_BzC9-s1iE >}}
