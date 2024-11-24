@@ -33,5 +33,41 @@ In RHEL, most of our time will be spent with regular files and directories.
 
 Vim is the text editor to use here. There is nano as a second option but i am not going to cover that one. 
 
+*VIM* stands for *Vi Improved* and *Vi* stands for Visual Editor. 
+
+Two ways to start *vim* in the termial
+
+{{< highlight type="sh" warp="true" >}} $ vim{{< /highlight >}}
+{{< highlight type="sh" warp="true" >}} $ vim <file> {{< /highlight >}}
+
+From here, we cycle through escape and insert modes. 
+
+|Command| Action |
+:--------:|---------
+i|Enter insert mode|
+ESC key | Enter escape mode|
+home key | move cursor to start of the line|
+end key | move cursor to end of the line|
+
+###### Save and Quit in VIM
+
+While in Escape mode
+
+|Command|Action|
+:------:|-------
+:w| Save only; does not close vim|
+:wq|Save and quit vim|
+:q|Quits if no changes were made|
+
+Bonus vim tip for when "copy and paste" is not available
+
+{{< highlight type="sh" warp="true" >}} :r !<command>  {{< /highlight >}}
+- I am sure there are better ways to do this
+
+
+##### Learning through action
+
+
+
 
 
