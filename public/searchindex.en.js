@@ -57,8 +57,8 @@ var relearn_searchindex = [
   },
   {
     "breadcrumb": "",
-    "content": "Hi, thank you for checking out my site On this site, use the menu on the left to navigate all content.\nAt the moment, I am currently focused on the Free RHCSA Course.\nI am hosting this website on Vultr\nClick the referral link to support!",
-    "description": "Hi, thank you for checking out my site On this site, use the menu on the left to navigate all content.\nAt the moment, I am currently focused on the Free RHCSA Course.\nI am hosting this website on Vultr\nClick the referral link to support!",
+    "content": "Hi, thank you for checking out my site On this site, use the menu on the left to navigate all content.\nAt the moment, I am currently focused on the Free RHCSA Course.\nI am hosting this website on Vultr\nClick the referral link to support!\nUpdate Taking a week off for the holidays. Minor updates here and there.",
+    "description": "Hi, thank you for checking out my site On this site, use the menu on the left to navigate all content.\nAt the moment, I am currently focused on the Free RHCSA Course.\nI am hosting this website on Vultr\nClick the referral link to support!\nUpdate Taking a week off for the holidays. Minor updates here and there.",
     "tags": [],
     "title": "front page",
     "uri": "/index.html"
