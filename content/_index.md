@@ -13,4 +13,3 @@ I am hosting this website on **[Vultr](https://www.vultr.com/?ref=9685907)**
 
 Click the referral link to support! 
 
-*Update* Taking a week off for the holidays. Minor updates here and there.
