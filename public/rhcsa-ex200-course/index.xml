@@ -55,7 +55,7 @@
       <link>http://localhost:1313/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html</link>
       <pubDate>Wed, 20 Nov 2024 22:15:37 -0500</pubDate>
       <guid>http://localhost:1313/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html</guid>
-      <description>Page Under Construction Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories In RHEL, most of our time will be spent with regular files and directories.&#xA;Files may contain text, a script, or binary data Directories are containers for files and other directories (sub-directories) $ stat &lt;file or dir&gt; Try using stat on a file and a directory File Editing VIM is going be your best friend when it comes to working with text files! Vim’s Official Website</description>
+      <description>Objective Focus Understand and use essential tools Create and edit text files Create, delete, copy, and move files and directories In RHEL, most of our time will be spent with regular files and directories.&#xA;Files may contain text, a script, or binary data Directories are containers for files and other directories (sub-directories) $ stat &lt;file or dir&gt; Try using stat on a file and a directory File Editing VIM is going be your best friend when it comes to working with text files! Vim’s Official Website</description>
     </item>
   </channel>
 </rss>

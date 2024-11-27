@@ -9,9 +9,8 @@ weight = 7
 
 
 
-##### Page Under Construction
 
-{{< youtube xxxxxxxxx >}}
+{{< youtube 6Ov8Y92DriM >}}
 
 ##### Objective Focus
 **Understand and use essential tools**
@@ -64,7 +63,7 @@ While in Escape mode
 | Command     | Action |
 | :-----------: | ----------- |
 | **Up/Down Arrow | Move view of page up and down       |
-| g/G   | *Move to top man page/ Move to bottom of man page        |
+| gg/G   | *Move to top man page/ Move to bottom of man page        |
 | /pattern   | *Searches forward in man page        |
 | ?pattern   |  *Searches forward in man page        |
 | n/N        | *Find next/previous pattern match|
