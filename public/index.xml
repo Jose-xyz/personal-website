@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>front page :: Jose N Sosa</title>
-    <link>http://localhost:1313/index.html</link>
-    <description>Hi, thank you for checking out my site On this site, use the menu on the left to navigate all content.&#xA;At the moment, I am currently focused on the Free RHCSA Course.&#xA;I am hosting this website on Vultr&#xA;Click the referral link to support!&#xA;Update Taking a week off for the holidays. Minor updates here and there.</description>
+    <link>https://josensosa.com/index.html</link>
+    <description>Hi, thank you for checking out my site On this site, use the menu on the left to navigate all content.&#xA;At the moment, I am currently focused on the Free RHCSA Course.&#xA;I am hosting this website on Vultr&#xA;Click the referral link to support!</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 20 Nov 2024 22:15:37 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 04 Dec 2024 15:52:37 -0500</lastBuildDate>
+    <atom:link href="https://josensosa.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>RHCSA EX200 Course</title>
-      <link>http://localhost:1313/rhcsa-ex200-course/index.html</link>
-      <pubDate>Wed, 20 Nov 2024 22:15:37 -0500</pubDate>
-      <guid>http://localhost:1313/rhcsa-ex200-course/index.html</guid>
-      <description>List of all course material and videos free.&#xA;Day 1: Intro How I Passed the RHCSA EX200 in 2024 Lab 1: Install Lab 2: Terminal and Command Syntax Lab 3: Directory Structure and Filesystem Lab 4: How to Get Help in Linux Lab 5: Working With Files &amp; Directories</description>
+      <link>https://josensosa.com/rhcsa-ex200-course/index.html</link>
+      <pubDate>Wed, 04 Dec 2024 15:52:37 -0500</pubDate>
+      <guid>https://josensosa.com/rhcsa-ex200-course/index.html</guid>
+      <description>List of all course material and videos free.&#xA;Day 1: Intro How I Passed the RHCSA EX200 in 2024 Lab 06: Input Output Redirection Lab 1: Install Lab 2: Terminal and Command Syntax Lab 3: Directory Structure and Filesystem Lab 4: How to Get Help in Linux Lab 5: Working With Files &amp; Directories</description>
     </item>
   </channel>
 </rss>

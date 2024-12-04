@@ -17,6 +17,8 @@ weight = 7
 : Create and edit text files
 : Create, delete, copy, and move files and directories
 
+[Official RHCSA EX200 Exam Objectives](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam?section=objectives)
+
 In RHEL, most of our time will be spent with regular files and directories. 
 - Files may contain text, a script, or binary data
 - Directories are containers for files and other directories (sub-directories)
@@ -155,7 +157,6 @@ Also, renames files
 
 {{< highlight type="sh" warp="true" >}} $ rm -r <dir> {{< /highlight >}}
 - -r option means recursively; deletes dir and its contents 
-
 
 That's it for lab 5! 
 

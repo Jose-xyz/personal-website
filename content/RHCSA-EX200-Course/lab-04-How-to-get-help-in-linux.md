@@ -11,6 +11,8 @@ weight =  6
 **Understand and use essential tools**
 : Locate, read, and use system documentation including man, info, and files in /usr/share/doc
 
+[Official RHCSA EX200 Exam Objectives](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam?section=objectives)
+
 Getting help in a Red Hat Linux environment, or any Linux OS, starts with your end goal. 
 
 For example, I need to know the last created directory in user *learners* home directory.

@@ -5,42 +5,30 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.138.0">
     <meta name="generator" content="Relearn 7.1.1">
-    <meta name="description" content="I passed the RHCSA Exam (EX200) in July of 2024.
-Study Resources Link to RHEL 9 Iso
-Link to RHCSA Exam Objectives
-Link to videos course from Sander Van Vugt &#43; his labs
-Books I used Red Hat RHCSA 9 Cert Guide: EX200 - Sander Van Vugt Covers all objectives but Sander has some unique ways of accomplishing tasks. Example “Resetting root password” using init=/bin/bash instead of rd.break. RHCSA Red Hat Enterprise Linux 9 Certification Study Guide, Eighth Edition – Michael Jang Great labs but missing some details on certain objectives Great Online material! Docs and Exams An example of material not covered so well were Containers. There were not as many examples as Sander’s book or video course. RHCSA Red Hat Enterprise Linux 9: Training and Exam Preparation Guide (EX200), Third Edition – Asghar Ghori I did not use this book in my studies but looked at it after passing and wished I did! Technology for Lab Virt Manager I used virt-manager on a linux OS (RHEL 9 in this case) for my lab purposes. Most study materials suggest creating two VMs for study. Getting hand-ons practice was the most valuable component of my prep. I also had a dual monitor display but remember, you will only be allowed to use one monitor on exam day.">
+    <meta name="description" content="Objective Focus Understand and use essential tools Create and edit text files Use input-output redirection (&gt;, », |, 2&gt;, etc.) Official RHCSA EX200 Exam Objectives
+Looking At File Content as Terminal Output $ cat concatenate files and print on the standard output $ less allows a user to partially display content of a file $ more has less options than $ less $ head output the first part of files, default is first 10 lines $ tail output the last part of files, default is last 10 lines Understanding Input and Output Redirection Input Output Error 0 1 2 &lt; &gt;, » 2&gt; $ out &lt; in $ in &gt; out $ in 2&gt; errout $ in » out Example Use Cases $ grep -i &#34;error&#34; &lt; samplelog.txt Download sample file here!">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="How I Passed the RHCSA EX200 in 2024 :: Jose N Sosa">
-    <meta name="twitter:description" content="I passed the RHCSA Exam (EX200) in July of 2024.
-Study Resources Link to RHEL 9 Iso
-Link to RHCSA Exam Objectives
-Link to videos course from Sander Van Vugt &#43; his labs
-Books I used Red Hat RHCSA 9 Cert Guide: EX200 - Sander Van Vugt Covers all objectives but Sander has some unique ways of accomplishing tasks. Example “Resetting root password” using init=/bin/bash instead of rd.break. RHCSA Red Hat Enterprise Linux 9 Certification Study Guide, Eighth Edition – Michael Jang Great labs but missing some details on certain objectives Great Online material! Docs and Exams An example of material not covered so well were Containers. There were not as many examples as Sander’s book or video course. RHCSA Red Hat Enterprise Linux 9: Training and Exam Preparation Guide (EX200), Third Edition – Asghar Ghori I did not use this book in my studies but looked at it after passing and wished I did! Technology for Lab Virt Manager I used virt-manager on a linux OS (RHEL 9 in this case) for my lab purposes. Most study materials suggest creating two VMs for study. Getting hand-ons practice was the most valuable component of my prep. I also had a dual monitor display but remember, you will only be allowed to use one monitor on exam day.">
-    <meta property="og:url" content="https://josensosa.com/rhcsa-ex200-course/how-i-passed-rhcsa/index.html">
+    <meta name="twitter:title" content="Lab 06: Input Output Redirection :: Jose N Sosa">
+    <meta name="twitter:description" content="Objective Focus Understand and use essential tools Create and edit text files Use input-output redirection (&gt;, », |, 2&gt;, etc.) Official RHCSA EX200 Exam Objectives
+Looking At File Content as Terminal Output $ cat concatenate files and print on the standard output $ less allows a user to partially display content of a file $ more has less options than $ less $ head output the first part of files, default is first 10 lines $ tail output the last part of files, default is last 10 lines Understanding Input and Output Redirection Input Output Error 0 1 2 &lt; &gt;, » 2&gt; $ out &lt; in $ in &gt; out $ in 2&gt; errout $ in » out Example Use Cases $ grep -i &#34;error&#34; &lt; samplelog.txt Download sample file here!">
+    <meta property="og:url" content="https://josensosa.com/rhcsa-ex200-course/lab-06-input-output-redirection/index.html">
     <meta property="og:site_name" content="Jose N Sosa">
-    <meta property="og:title" content="How I Passed the RHCSA EX200 in 2024 :: Jose N Sosa">
-    <meta property="og:description" content="I passed the RHCSA Exam (EX200) in July of 2024.
-Study Resources Link to RHEL 9 Iso
-Link to RHCSA Exam Objectives
-Link to videos course from Sander Van Vugt &#43; his labs
-Books I used Red Hat RHCSA 9 Cert Guide: EX200 - Sander Van Vugt Covers all objectives but Sander has some unique ways of accomplishing tasks. Example “Resetting root password” using init=/bin/bash instead of rd.break. RHCSA Red Hat Enterprise Linux 9 Certification Study Guide, Eighth Edition – Michael Jang Great labs but missing some details on certain objectives Great Online material! Docs and Exams An example of material not covered so well were Containers. There were not as many examples as Sander’s book or video course. RHCSA Red Hat Enterprise Linux 9: Training and Exam Preparation Guide (EX200), Third Edition – Asghar Ghori I did not use this book in my studies but looked at it after passing and wished I did! Technology for Lab Virt Manager I used virt-manager on a linux OS (RHEL 9 in this case) for my lab purposes. Most study materials suggest creating two VMs for study. Getting hand-ons practice was the most valuable component of my prep. I also had a dual monitor display but remember, you will only be allowed to use one monitor on exam day.">
+    <meta property="og:title" content="Lab 06: Input Output Redirection :: Jose N Sosa">
+    <meta property="og:description" content="Objective Focus Understand and use essential tools Create and edit text files Use input-output redirection (&gt;, », |, 2&gt;, etc.) Official RHCSA EX200 Exam Objectives
+Looking At File Content as Terminal Output $ cat concatenate files and print on the standard output $ less allows a user to partially display content of a file $ more has less options than $ less $ head output the first part of files, default is first 10 lines $ tail output the last part of files, default is last 10 lines Understanding Input and Output Redirection Input Output Error 0 1 2 &lt; &gt;, » 2&gt; $ out &lt; in $ in &gt; out $ in 2&gt; errout $ in » out Example Use Cases $ grep -i &#34;error&#34; &lt; samplelog.txt Download sample file here!">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="RHCSA EX200 Course">
-    <meta property="article:published_time" content="2024-11-14T12:31:52-05:00">
-    <meta property="article:modified_time" content="2024-11-14T12:31:52-05:00">
-    <meta itemprop="name" content="How I Passed the RHCSA EX200 in 2024 :: Jose N Sosa">
-    <meta itemprop="description" content="I passed the RHCSA Exam (EX200) in July of 2024.
-Study Resources Link to RHEL 9 Iso
-Link to RHCSA Exam Objectives
-Link to videos course from Sander Van Vugt &#43; his labs
-Books I used Red Hat RHCSA 9 Cert Guide: EX200 - Sander Van Vugt Covers all objectives but Sander has some unique ways of accomplishing tasks. Example “Resetting root password” using init=/bin/bash instead of rd.break. RHCSA Red Hat Enterprise Linux 9 Certification Study Guide, Eighth Edition – Michael Jang Great labs but missing some details on certain objectives Great Online material! Docs and Exams An example of material not covered so well were Containers. There were not as many examples as Sander’s book or video course. RHCSA Red Hat Enterprise Linux 9: Training and Exam Preparation Guide (EX200), Third Edition – Asghar Ghori I did not use this book in my studies but looked at it after passing and wished I did! Technology for Lab Virt Manager I used virt-manager on a linux OS (RHEL 9 in this case) for my lab purposes. Most study materials suggest creating two VMs for study. Getting hand-ons practice was the most valuable component of my prep. I also had a dual monitor display but remember, you will only be allowed to use one monitor on exam day.">
-    <meta itemprop="datePublished" content="2024-11-14T12:31:52-05:00">
-    <meta itemprop="dateModified" content="2024-11-14T12:31:52-05:00">
-    <meta itemprop="wordCount" content="560">
-    <title>How I Passed the RHCSA EX200 in 2024 :: Jose N Sosa</title>
+    <meta property="article:published_time" content="2024-12-04T15:52:37-05:00">
+    <meta property="article:modified_time" content="2024-12-04T15:52:37-05:00">
+    <meta itemprop="name" content="Lab 06: Input Output Redirection :: Jose N Sosa">
+    <meta itemprop="description" content="Objective Focus Understand and use essential tools Create and edit text files Use input-output redirection (&gt;, », |, 2&gt;, etc.) Official RHCSA EX200 Exam Objectives
+Looking At File Content as Terminal Output $ cat concatenate files and print on the standard output $ less allows a user to partially display content of a file $ more has less options than $ less $ head output the first part of files, default is first 10 lines $ tail output the last part of files, default is last 10 lines Understanding Input and Output Redirection Input Output Error 0 1 2 &lt; &gt;, » 2&gt; $ out &lt; in $ in &gt; out $ in 2&gt; errout $ in » out Example Use Cases $ grep -i &#34;error&#34; &lt; samplelog.txt Download sample file here!">
+    <meta itemprop="datePublished" content="2024-12-04T15:52:37-05:00">
+    <meta itemprop="dateModified" content="2024-12-04T15:52:37-05:00">
+    <meta itemprop="wordCount" content="145">
+    <title>Lab 06: Input Output Redirection :: Jose N Sosa</title>
     <link href="/css/fontawesome-all.min.css?1733356209" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733356209" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css?1733356209" rel="stylesheet">
     <link href="/css/auto-complete.css?1733356209" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733356209" rel="stylesheet"></noscript>
@@ -71,7 +59,7 @@ Books I used Red Hat RHCSA 9 Cert Guide: EX200 - Sander Van Vugt Covers all obje
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html">
+  <body class="mobile-support html" data-url="/rhcsa-ex200-course/lab-06-input-output-redirection/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -90,12 +78,12 @@ Books I used Red Hat RHCSA 9 Cert Guide: EX200 - Sander Van Vugt Covers all obje
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">front page</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/rhcsa-ex200-course/index.html"><span itemprop="name">RHCSA EX200 Course</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">How I Passed the RHCSA EX200 in 2024</span><meta itemprop="position" content="3"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Lab 06: Input Output Redirection</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/rhcsa-ex200-course/index.html" title="RHCSA EX200 Course (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html" title="Lab 5: Working With Files &amp; Directories (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/rhcsa-ex200-course/day-1-intro/index.html" title="Day 1: Intro (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -115,67 +103,92 @@ Books I used Red Hat RHCSA 9 Cert Guide: EX200 - Sander Van Vugt Covers all obje
   <header class="headline">
   </header>
 
-<h1 id="how-i-passed-the-rhcsa-ex200-in-2024">How I Passed the RHCSA EX200 in 2024</h1>
+<h1 id="lab-06-input-output-redirection">Lab 06: Input Output Redirection</h1>
 
 
 
     
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/c-7sX_WBDWk?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xxxxxxxxxx?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
       ></iframe>
     </div>
 
-<p>I passed the RHCSA Exam (EX200) in July of 2024.</p>
-<h5 id="study-resources">Study Resources</h5>
-<p><a href="https://developers.redhat.com/products/rhel/download#rhelforsap896" rel="external" target="_blank">Link to RHEL 9 Iso</a></p>
-<p><a href="https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam?section=objectives" rel="external" target="_blank">Link to RHCSA Exam Objectives</a></p>
-<p><a href="https://www.oreilly.com/" rel="external" target="_blank">Link to videos course from Sander Van Vugt + his labs</a></p>
-<h6 id="books-i-used">Books I used</h6>
+<h5 id="objective-focus">Objective Focus</h5>
 <dl>
-<dt>Red Hat RHCSA 9 Cert Guide: EX200 - Sander Van Vugt</dt>
-<dd>Covers all objectives but Sander has some unique ways of accomplishing tasks.</dd>
-<dd>Example “Resetting root password” using init=/bin/bash instead of rd.break.</dd>
+<dt><strong>Understand and use essential tools</strong></dt>
+<dd>Create and edit text files</dd>
+<dd>Use input-output redirection (&gt;, &raquo;, |, 2&gt;, etc.)</dd>
 </dl>
-<!-- raw HTML omitted -->
-<dl>
-<dt>RHCSA Red Hat Enterprise Linux 9 Certification Study Guide, Eighth Edition – Michael Jang</dt>
-<dd>Great labs but missing some details on certain objectives</dd>
-<dd>Great Online material! Docs and Exams</dd>
-<dd>An example of material not covered so well were <em>Containers</em>. There were not as many examples as Sander&rsquo;s book or video course.</dd>
-</dl>
-<!-- raw HTML omitted -->
-<dl>
-<dt>RHCSA Red Hat Enterprise Linux 9: Training and Exam Preparation Guide (EX200), Third Edition – Asghar Ghori</dt>
-<dd>I did not use this book in my studies but looked at it after passing and wished I did!</dd>
-</dl>
-<h6 id="technology-for-lab">Technology for Lab</h6>
-<dl>
-<dt>Virt Manager</dt>
-<dd>I used virt-manager on a linux OS (RHEL 9 in this case) for my lab purposes.</dd>
-<dd>Most study materials suggest creating two VMs for study.</dd>
-<dd>Getting hand-ons practice was the most valuable component of my prep.</dd>
-</dl>
-<p>I also had a dual monitor display but <strong>remember, you will only be allowed to use one monitor on exam day.</strong></p>
-<h6 id="study-routine">Study Routine</h6>
-<p>3 months from May to the end of July</p>
-<p>I read and followed Sanders book from start to finish and did labs along the way. Then, I did the same with Jang&rsquo;s book.</p>
-<p>I used Sanders Video course on <a href="https://www.oreilly.com/" rel="external" target="_blank">Oreilly.com</a>  to focus on objectives that weren’t too clear in the books.</p>
-<p>I did labs almost everyday and practiced tasks with multiple steps like LVM configuration and containers regularly. I did this because these tasks involve multiple steps and I wanted to reduce the time I spent looking through man pages.</p>
-<p>I took breaks when I needed. For example, in a 1 – 2 hour study session I had like 15 two-min breaks.</p>
-<p>Yes, I took that many breaks, especially on days that the study material was tough to get through.</p>
-<p>If I did not have too much energy after work, I would do at minimum one task related to an objectives – ie a task from the labs in the book resources.</p>
-<p>I studied mostly in the evening and right before bed because I was also working a full-time job.</p>
-<h6 id="actual-exam">Actual Exam</h6>
-<p>Pick a date sooner than later. I chose July 29th and stuck to it.</p>
-<p>It forced me to study on those busier days.</p>
-<p>During the actual exam, make sure to keep going even when you hit a bump in the road.</p>
-<p>I remember doing a task, and halfway through, I realized I was doing it on the wrong VM.</p>
-<h6 id="here-are-some-helpful-links-provided-by-red-hat">Here are some helpful links provided by Red Hat</h6>
-<p><a href="https://www.youtube.com/watch?v=Me6Y12-sux8&t=0s" rel="external" target="_blank">How to navigate the exam</a></p>
-<p><a href="https://learn.redhat.com/t5/Certification-Resources/Getting-Ready-for-your-Red-Hat-Remote-Exam/ba-p/33528" rel="external" target="_blank">Getting for the remote, bootable USB set up</a></p>
-<h6 id="final-thoughts">Final Thoughts</h6>
-<p>This was the first practical certification exam I had ever taken and I was nervous going into it. I took this exam for my own personal interests and my success or faliure was not tied to my job, at the time or anything. There was a bit of relief in that but I made it a goal and wanted to be successful!</p>
-<p>As cliche as it may sound, if i can do it so can you!</p>
+<p><a href="https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam?section=objectives" rel="external" target="_blank">Official RHCSA EX200 Exam Objectives</a></p>
+<h6 id="looking-at-file-content-as-terminal-output">Looking At File Content as Terminal Output</h6>
+<div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ cat  </span></span></code></pre></div>
+
+<ul>
+<li>concatenate files and print on the standard output</li>
+</ul>
+<div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ less    </span></span></code></pre></div>
+
+<ul>
+<li>allows a user to partially display content of a file</li>
+</ul>
+<div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ more    </span></span></code></pre></div>
+
+<ul>
+<li>has less options than <em>$ less</em></li>
+</ul>
+<div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ head    </span></span></code></pre></div>
+
+<ul>
+<li>output the first part of files, default is first 10 lines</li>
+</ul>
+<div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ tail    </span></span></code></pre></div>
+
+<ul>
+<li>output the last part of files, default is last 10 lines</li>
+</ul>
+<h6 id="understanding-input-and-output-redirection">Understanding Input and Output Redirection</h6>
+<table>
+  <thead>
+      <tr>
+          <th style="text-align: center">Input</th>
+          <th style="text-align: center">Output</th>
+          <th style="text-align: center">Error</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td style="text-align: center">0</td>
+          <td style="text-align: center">1</td>
+          <td style="text-align: center">2</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">&lt;</td>
+          <td style="text-align: center">&gt;, &raquo;</td>
+          <td style="text-align: center">2&gt;</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">$ out &lt; in</td>
+          <td style="text-align: center">$ in &gt; out</td>
+          <td style="text-align: center">$ in 2&gt; errout</td>
+      </tr>
+      <tr>
+          <td style="text-align: center"></td>
+          <td style="text-align: center">$ in &raquo; out</td>
+          <td></td>
+      </tr>
+  </tbody>
+</table>
+<h6 id="example-use-cases">Example Use Cases</h6>
+<div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ grep -i <span style="color:#e6db74">&#34;error&#34;</span> &lt; samplelog.txt   </span></span></code></pre></div>
+
+<p>Download sample file
+  <a href="/downloads/samplelog.txt" download>here!</a></p>
+<div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ ip a &gt; pcinfo.txt    </span></span></code></pre></div>
+
+<p><div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ hostname &gt;&gt; pcinfo.txt    </span></span></code></pre></div>
+
+<div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ hostname123 2&gt; errout.txt    </span></span></code></pre></div>
+</p>
 
   <footer class="footline">
   </footer>
@@ -222,14 +235,14 @@ Jose N Sosa
         <div id="R-shortcutmenu-home" class="R-sidebarmenu">
           <ul class="enlarge morespace collapsible-menu">
             <li class="parent " data-nav-id="/rhcsa-ex200-course/index.html"><a class="padding" href="/rhcsa-ex200-course/index.html">RHCSA EX200 Course<i class="fa-fw fas fa-check read-icon"></i></a><ul id="R-subsections-2342a0bf1f9e2029569c944b12ca15fe" class="collapsible-menu">
-            <li class="active " data-nav-id="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html"><a class="padding" href="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html">How I Passed the RHCSA EX200 in 2024<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html"><a class="padding" href="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html">How I Passed the RHCSA EX200 in 2024<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/day-1-intro/index.html"><a class="padding" href="/rhcsa-ex200-course/day-1-intro/index.html">Day 1: Intro<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab01-install/index.html"><a class="padding" href="/rhcsa-ex200-course/lab01-install/index.html">Lab 1: Install<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab02-termandcommands/index.html"><a class="padding" href="/rhcsa-ex200-course/lab02-termandcommands/index.html">Lab 2: Terminal and Command Syntax<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html">Lab 3: Directory Structure and Filesystem<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html">Lab 4: How to Get Help in Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html">Lab 5: Working With Files &amp; Directories<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/rhcsa-ex200-course/lab-06-input-output-redirection/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-06-input-output-redirection/index.html">Lab 06: Input Output Redirection<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="active " data-nav-id="/rhcsa-ex200-course/lab-06-input-output-redirection/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-06-input-output-redirection/index.html">Lab 06: Input Output Redirection<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
     
@@ -245,7 +258,7 @@ Jose N Sosa
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/rhcsa-ex200-course/how-i-passed-rhcsa/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/rhcsa-ex200-course/lab-06-input-output-redirection/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>
