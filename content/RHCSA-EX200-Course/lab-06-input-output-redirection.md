@@ -56,3 +56,25 @@ Download sample file{{< download "/downloads/samplelog.txt" >}}here!{{< /downloa
 {{< highlight type="sh" warp="true" >}} $ hostname >> pcinfo.txt    {{< /highlight >}}
 {{< highlight type="sh" warp="true" >}} $ hostname123 2> errout.txt    {{< /highlight >}}
 
+
+
+###### How to use pipes "|" in Linux
+
+Using the "|" character is a form of redirection. It allows you to take output from one command to another. 
+
+{{< highlight type="sh" warp="true" >}} $ cmd1 | cmd2 | cmd3 |.....|cmd_x    {{< /highlight >}}
+
+Example Use Cases
+
+
+{{< highlight type="sh" warp="true" >}} $ ip a | grep -i "inet" | awk '{print $1,$2}'
+{{< /highlight >}}
+
+The above example shows us how we use available tools on the system for redirection. 
+We could also redirect this output to a text file to share. 
+
+
+Redirections are very important to completing daily tasks in linux!
+
+That's for lab 6
+
