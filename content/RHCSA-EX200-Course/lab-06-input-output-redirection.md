@@ -5,7 +5,7 @@ draft = false
 title = 'Lab 6: Input Output Redirection'
 weight = 8 
 +++
-{{< youtube xxxxxxxxxx >}}
+{{< youtube 32tQhxkKvlY >}}
 
 
 ##### Objective Focus
@@ -38,7 +38,6 @@ weight = 8
 
 |Input|Output|Error
 |:-----:|:----:|:----:
-0|1|2
 |<|>, >>|2>
 |$ out < in| $ in > out| $ in 2> errout
 ||$ in >> out |
@@ -64,17 +63,17 @@ Using the "|" character is a form of redirection. It allows you to take output f
 
 {{< highlight type="sh" warp="true" >}} $ cmd1 | cmd2 | cmd3 |.....|cmd_x    {{< /highlight >}}
 
-Example Use Cases
+###### Example Use Cases
 
 
 {{< highlight type="sh" warp="true" >}} $ ip a | grep -i "inet" | awk '{print $1,$2}'
 {{< /highlight >}}
 
 The above example shows us how we use available tools on the system for redirection. 
-We could also redirect this output to a text file to share. 
+And how We could also redirect this output to a text file to share. 
 
 
 Redirections are very important to completing daily tasks in linux!
 
-That's for lab 6
+That's it for lab 6!
 
