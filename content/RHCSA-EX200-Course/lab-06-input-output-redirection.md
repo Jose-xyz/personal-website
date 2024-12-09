@@ -2,7 +2,7 @@
 +++
 date = '2024-12-04T15:52:37-05:00'
 draft = false
-title = 'Lab 06: Input Output Redirection'
+title = 'Lab 6: Input Output Redirection'
 weight = 8 
 +++
 {{< youtube xxxxxxxxxx >}}
