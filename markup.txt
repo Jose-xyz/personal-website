@@ -1,0 +1,22 @@
+{{< highlight type="sh" warp="true" >}} $ grep -i "error" < samplelog.txt   {{< /highlight >}}
+
+Download sample file{{< download "/downloads/samplelog.txt" >}}here!{{< /download >}}
+
+|||
+|:-----:|:----:|:----:
+|||
+|||
+|||
+
+
+
+
+{{< youtube 32tQhxkKvlY >}}
+
+
+##### Objective Focus
+**Understand and use essential tools**
+: Create and edit text files
+: Use input-output redirection (>, >>, |, 2>, etc.)
+
+[Official RHCSA EX200 Exam Objectives](https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam?section=objectives)

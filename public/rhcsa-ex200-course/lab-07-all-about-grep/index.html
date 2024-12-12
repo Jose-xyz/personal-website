@@ -5,30 +5,30 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.138.0">
     <meta name="generator" content="Relearn 7.1.1">
-    <meta name="description" content="Display of Directory Structure using $Tree Command Edited ouput
-[root@server1 /]# tree -d -L 2 . ├── afs ├── bin -&gt; usr/bin ├── boot │ ├── efi │ ├── grub2 │ └── loader ├── dev │ ├── block │ ├── bsg │ ├── bus │ ├── snd │ ├── vfio │ └── virtio-ports ├── etc │ ├── accountsservice │ ├── alsa │ ├── tmpfiles.d │ ├── tpm2-tss │ ├── tuned │ ├── udev │ └── yum.repos.d ├── home │ └── learner ├── lib -&gt; usr/lib ├── lib64 -&gt; usr/lib64 ├── media ├── mnt ├── opt ├── proc │ ├── driver │ ├── fs │ ├── irq │ ├── net -&gt; self/net │ ├── scsi │ ├── self -&gt; 2892 │ ├── sys │ ├── sysvipc │ ├── thread-self -&gt; 2892/task/2892 │ └── tty ├── root ├── run │ ├── share │ ├── src │ └── tmp -&gt; ../var/tmp └── var ├── adm ├── ftp ├── games “Everything is a File” In the linux/GNU operating system, eveything appears in some say in the file system.">
+    <meta name="description" content="Objective Focus Understand and use essential tools Use grep and regular expressions to analyze text Official RHCSA EX200 Exam Objectives
+To begin, I want to point out the importance of focusing on the official objectives. Grep is a powerful tool and it can get complex quickly. Remember, the main thing is to gain familiarity with the tool and where to find help docs (aka Manual Pages). That will help keep us on track with passing the EX200.">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Lab 3: Directory Structure and Filesystem :: Jose N Sosa">
-    <meta name="twitter:description" content="Display of Directory Structure using $Tree Command Edited ouput
-[root@server1 /]# tree -d -L 2 . ├── afs ├── bin -&gt; usr/bin ├── boot │ ├── efi │ ├── grub2 │ └── loader ├── dev │ ├── block │ ├── bsg │ ├── bus │ ├── snd │ ├── vfio │ └── virtio-ports ├── etc │ ├── accountsservice │ ├── alsa │ ├── tmpfiles.d │ ├── tpm2-tss │ ├── tuned │ ├── udev │ └── yum.repos.d ├── home │ └── learner ├── lib -&gt; usr/lib ├── lib64 -&gt; usr/lib64 ├── media ├── mnt ├── opt ├── proc │ ├── driver │ ├── fs │ ├── irq │ ├── net -&gt; self/net │ ├── scsi │ ├── self -&gt; 2892 │ ├── sys │ ├── sysvipc │ ├── thread-self -&gt; 2892/task/2892 │ └── tty ├── root ├── run │ ├── share │ ├── src │ └── tmp -&gt; ../var/tmp └── var ├── adm ├── ftp ├── games “Everything is a File” In the linux/GNU operating system, eveything appears in some say in the file system.">
-    <meta property="og:url" content="https://josensosa.com/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html">
+    <meta name="twitter:title" content="Lab 7: Grep with RegEx :: Jose N Sosa">
+    <meta name="twitter:description" content="Objective Focus Understand and use essential tools Use grep and regular expressions to analyze text Official RHCSA EX200 Exam Objectives
+To begin, I want to point out the importance of focusing on the official objectives. Grep is a powerful tool and it can get complex quickly. Remember, the main thing is to gain familiarity with the tool and where to find help docs (aka Manual Pages). That will help keep us on track with passing the EX200.">
+    <meta property="og:url" content="https://josensosa.com/rhcsa-ex200-course/lab-07-all-about-grep/index.html">
     <meta property="og:site_name" content="Jose N Sosa">
-    <meta property="og:title" content="Lab 3: Directory Structure and Filesystem :: Jose N Sosa">
-    <meta property="og:description" content="Display of Directory Structure using $Tree Command Edited ouput
-[root@server1 /]# tree -d -L 2 . ├── afs ├── bin -&gt; usr/bin ├── boot │ ├── efi │ ├── grub2 │ └── loader ├── dev │ ├── block │ ├── bsg │ ├── bus │ ├── snd │ ├── vfio │ └── virtio-ports ├── etc │ ├── accountsservice │ ├── alsa │ ├── tmpfiles.d │ ├── tpm2-tss │ ├── tuned │ ├── udev │ └── yum.repos.d ├── home │ └── learner ├── lib -&gt; usr/lib ├── lib64 -&gt; usr/lib64 ├── media ├── mnt ├── opt ├── proc │ ├── driver │ ├── fs │ ├── irq │ ├── net -&gt; self/net │ ├── scsi │ ├── self -&gt; 2892 │ ├── sys │ ├── sysvipc │ ├── thread-self -&gt; 2892/task/2892 │ └── tty ├── root ├── run │ ├── share │ ├── src │ └── tmp -&gt; ../var/tmp └── var ├── adm ├── ftp ├── games “Everything is a File” In the linux/GNU operating system, eveything appears in some say in the file system.">
+    <meta property="og:title" content="Lab 7: Grep with RegEx :: Jose N Sosa">
+    <meta property="og:description" content="Objective Focus Understand and use essential tools Use grep and regular expressions to analyze text Official RHCSA EX200 Exam Objectives
+To begin, I want to point out the importance of focusing on the official objectives. Grep is a powerful tool and it can get complex quickly. Remember, the main thing is to gain familiarity with the tool and where to find help docs (aka Manual Pages). That will help keep us on track with passing the EX200.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="RHCSA EX200 Course">
-    <meta property="article:published_time" content="2024-11-15T11:01:51-05:00">
-    <meta property="article:modified_time" content="2024-11-15T11:01:51-05:00">
-    <meta itemprop="name" content="Lab 3: Directory Structure and Filesystem :: Jose N Sosa">
-    <meta itemprop="description" content="Display of Directory Structure using $Tree Command Edited ouput
-[root@server1 /]# tree -d -L 2 . ├── afs ├── bin -&gt; usr/bin ├── boot │ ├── efi │ ├── grub2 │ └── loader ├── dev │ ├── block │ ├── bsg │ ├── bus │ ├── snd │ ├── vfio │ └── virtio-ports ├── etc │ ├── accountsservice │ ├── alsa │ ├── tmpfiles.d │ ├── tpm2-tss │ ├── tuned │ ├── udev │ └── yum.repos.d ├── home │ └── learner ├── lib -&gt; usr/lib ├── lib64 -&gt; usr/lib64 ├── media ├── mnt ├── opt ├── proc │ ├── driver │ ├── fs │ ├── irq │ ├── net -&gt; self/net │ ├── scsi │ ├── self -&gt; 2892 │ ├── sys │ ├── sysvipc │ ├── thread-self -&gt; 2892/task/2892 │ └── tty ├── root ├── run │ ├── share │ ├── src │ └── tmp -&gt; ../var/tmp └── var ├── adm ├── ftp ├── games “Everything is a File” In the linux/GNU operating system, eveything appears in some say in the file system.">
-    <meta itemprop="datePublished" content="2024-11-15T11:01:51-05:00">
-    <meta itemprop="dateModified" content="2024-11-15T11:01:51-05:00">
-    <meta itemprop="wordCount" content="312">
-    <title>Lab 3: Directory Structure and Filesystem :: Jose N Sosa</title>
+    <meta property="article:published_time" content="2024-12-09T16:53:53-05:00">
+    <meta property="article:modified_time" content="2024-12-09T16:53:53-05:00">
+    <meta itemprop="name" content="Lab 7: Grep with RegEx :: Jose N Sosa">
+    <meta itemprop="description" content="Objective Focus Understand and use essential tools Use grep and regular expressions to analyze text Official RHCSA EX200 Exam Objectives
+To begin, I want to point out the importance of focusing on the official objectives. Grep is a powerful tool and it can get complex quickly. Remember, the main thing is to gain familiarity with the tool and where to find help docs (aka Manual Pages). That will help keep us on track with passing the EX200.">
+    <meta itemprop="datePublished" content="2024-12-09T16:53:53-05:00">
+    <meta itemprop="dateModified" content="2024-12-09T16:53:53-05:00">
+    <meta itemprop="wordCount" content="211">
+    <title>Lab 7: Grep with RegEx :: Jose N Sosa</title>
     <link href="/css/fontawesome-all.min.css?1733964366" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/fontawesome-all.min.css?1733964366" rel="stylesheet"></noscript>
     <link href="/css/nucleus.css?1733964366" rel="stylesheet">
     <link href="/css/auto-complete.css?1733964366" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/css/auto-complete.css?1733964366" rel="stylesheet"></noscript>
@@ -59,7 +59,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html">
+  <body class="mobile-support html" data-url="/rhcsa-ex200-course/lab-07-all-about-grep/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -78,12 +78,12 @@
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList"><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/index.html"><span itemprop="name">front page</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li><li
             itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><a itemprop="item" href="/rhcsa-ex200-course/index.html"><span itemprop="name">RHCSA EX200 Course</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li><li
-            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Lab 3: Directory Structure and Filesystem</span><meta itemprop="position" content="3"></li>
+            itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement"><span itemprop="name">Lab 7: Grep with RegEx</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/rhcsa-ex200-course/lab02-termandcommands/index.html" title="Lab 2: Terminal and Command Syntax (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/rhcsa-ex200-course/lab-06-input-output-redirection/index.html" title="Lab 6: Input Output Redirection (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html" title="Lab 4: How to Get Help in Linux (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -103,115 +103,85 @@
   <header class="headline">
   </header>
 
-<h1 id="lab-3-directory-structure-and-filesystem">Lab 3: Directory Structure and Filesystem</h1>
+<h1 id="lab-7-grep-with-regex">Lab 7: Grep with RegEx</h1>
 
 
 
     
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/f_BzC9-s1iE?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
+      <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/xxxxxxxxxx?autoplay=0&controls=1&end=0&loop=0&mute=0&start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video"
       ></iframe>
     </div>
 
-<h6 id="display-of-directory-structure-using-tree-command">Display of Directory Structure using $Tree Command</h6>
-<ul>
-<li>
-<p>Edited ouput</p>
-<pre><code>  [root@server1 /]# tree -d -L 2
-  .
-  ├── afs
-  ├── bin -&gt; usr/bin
-  ├── boot
-  │   ├── efi
-  │   ├── grub2
-  │   └── loader
-  ├── dev
-  │   ├── block
-  │   ├── bsg
-  │   ├── bus
-  │   ├── snd
-  │   ├── vfio
-  │   └── virtio-ports
-  ├── etc
-  │   ├── accountsservice
-  │   ├── alsa
-  │   ├── tmpfiles.d
-  │   ├── tpm2-tss
-  │   ├── tuned
-  │   ├── udev
-  │   └── yum.repos.d
-  ├── home
-  │   └── learner
-  ├── lib -&gt; usr/lib
-  ├── lib64 -&gt; usr/lib64
-  ├── media
-  ├── mnt
-  ├── opt
-  ├── proc
-  │   ├── driver
-  │   ├── fs
-  │   ├── irq
-  │   ├── net -&gt; self/net
-  │   ├── scsi
-  │   ├── self -&gt; 2892
-  │   ├── sys
-  │   ├── sysvipc
-  │   ├── thread-self -&gt; 2892/task/2892
-  │   └── tty
-  ├── root
-  ├── run
-  │   ├── share
-  │   ├── src
-  │   └── tmp -&gt; ../var/tmp
-  └── var
-  	├── adm
-  	├── ftp
-  	├── games
-</code></pre>
-</li>
-</ul>
-<h6 id="everything-is-a-file">&ldquo;Everything is a File&rdquo;</h6>
-<p>In the linux/GNU operating system, eveything appears in some say in the file system.</p>
-<p>Here is a <a href="https://en.wikipedia.org/wiki/Filesystem_Hierarchy_Standard" rel="external" target="_blank">link</a> to a wiki page explaining the Filesystem used in Red Hat Linux.</p>
-<p>Here is a <a href="https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/7/html/storage_administration_guide/ch-filesystem#s3-filesystem-dev" rel="external" target="_blank">link</a> to Red Hat&rsquo;s documentation related to the file system and structure.</p>
-<h5 id="getting-to-know-the-directory-structure-and-file-system">Getting to know the directory structure and file system</h5>
+<h5 id="objective-focus">Objective Focus</h5>
 <dl>
-<dt><div class="highlight wrap-code"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ tree </span></span></code></pre></div>
-</dt>
-<dd>(<em>tree</em>) - list contents of directories in a tree-like format.</dd>
+<dt><strong>Understand and use essential tools</strong></dt>
+<dd>Use grep and regular expressions to analyze text</dd>
 </dl>
-<p>The <em>tree</em> command is going to help us explore.</p>
+<p><a href="https://www.redhat.com/en/services/training/ex200-red-hat-certified-system-administrator-rhcsa-exam?section=objectives" rel="external" target="_blank">Official RHCSA EX200 Exam Objectives</a></p>
+<p>To begin, I want to point out the importance of focusing on the official objectives.
+Grep is a powerful tool and it can get complex quickly.
+Remember, the main thing is to gain familiarity with the tool and where to find help docs (aka Manual Pages). That will help keep us on track with passing the EX200.</p>
+<p>Grep helps us print lines that match patterns!</p>
+<p>Download sample log to follow along
+  <a href="/downloads/sample_sysinfo.log" download>here!</a></p>
+<h6 id="basic-grep-syntax">Basic <em>Grep</em> Syntax</h6>
+<dl>
+<dt><div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ grep <span style="color:#f92672">[</span>OPTION...<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>PATTERNS<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>FILE...<span style="color:#f92672">]</span> </span></span></code></pre></div>
+</dt>
+<dd>Syntax for grep command</dd>
+<dt><div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ grep <span style="color:#e6db74">&#39;ERROR&#39;</span> sample_sysinfo.log </span></span></code></pre></div>
+</dt>
+<dd>Match for exact occurence of &lsquo;ERROR&rsquo;, grep is case sensitive</dd>
+<dt><div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ grep <span style="color:#e6db74">&#39;^2024-12-11&#39;</span>  sample_sysinfo.log </span></span></code></pre></div>
+</dt>
+<dd>Match start of a line (^)</dd>
+<dt><div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ grep <span style="color:#e6db74">&#39;ted$&#39;</span> sample_sysinfo.log</span></span></code></pre></div>
+</dt>
+<dd>Match end of a line ($)</dd>
+<dt><div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ grep <span style="color:#e6db74">&#39;..:00:00&#39;</span> sample_sysinfo.log </span></span></code></pre></div>
+</dt>
+<dd>Match any single character (.)</dd>
+<dt><div class="highlight wrap-code" warp="true"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span> $ grep <span style="color:#e6db74">&#39;10:[3-5]&#39;</span> sample_sysinfo.log </span></span></code></pre></div>
+</dt>
+<dd>Character classes [a-zA-Z] [0-9]</dd>
+</dl>
+<h6 id="options-i-use-often">Options I use often</h6>
 <table>
   <thead>
       <tr>
-          <th>Options</th>
-          <th>What they do</th>
+          <th style="text-align: center">Option</th>
+          <th style="text-align: center">Action</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>-a</td>
-          <td>Show hidden files</td>
+          <td style="text-align: center">-i</td>
+          <td style="text-align: center">Ignore case</td>
       </tr>
       <tr>
-          <td>-d</td>
-          <td>Don&rsquo;t show files; Only show directory name</td>
+          <td style="text-align: center">-r or -R</td>
+          <td style="text-align: center">Search recursively in directories</td>
       </tr>
       <tr>
-          <td>-h</td>
-          <td>Show human-readable file sizes</td>
+          <td style="text-align: center">-v</td>
+          <td style="text-align: center">Invert the match, show lines that do not match the pattern.</td>
       </tr>
       <tr>
-          <td>-f</td>
-          <td>Print the full path files</td>
+          <td style="text-align: center">-n</td>
+          <td style="text-align: center">Show line numbers of matching lines</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-l</td>
+          <td style="text-align: center">Show only the filename with matches</td>
+      </tr>
+      <tr>
+          <td style="text-align: center">-o</td>
+          <td style="text-align: center">Show only the matching part of line</td>
       </tr>
   </tbody>
 </table>
-<ul>
-<li>Lab Challenge: Using <em>$tree</em> list all files including hidden files in the /etc with their  fullpath shown. What do you see and don&rsquo;t see?</li>
-</ul>
-<p>That&rsquo;s all to explore here for lab 4!</p>
-<p>Take some time to look around even if you do not know what everything means or its purpose.</p>
+<p>For now, that&rsquo;s all for Grep!</p>
 
   <footer class="footline">
   </footer>
@@ -262,11 +232,11 @@ Jose N Sosa
             <li class="" data-nav-id="/rhcsa-ex200-course/day-1-intro/index.html"><a class="padding" href="/rhcsa-ex200-course/day-1-intro/index.html">Day 1: Intro<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab01-install/index.html"><a class="padding" href="/rhcsa-ex200-course/lab01-install/index.html">Lab 1: Install<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab02-termandcommands/index.html"><a class="padding" href="/rhcsa-ex200-course/lab02-termandcommands/index.html">Lab 2: Terminal and Command Syntax<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="active " data-nav-id="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html">Lab 3: Directory Structure and Filesystem<i class="fa-fw fas fa-check read-icon"></i></a></li>
+            <li class="" data-nav-id="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html">Lab 3: Directory Structure and Filesystem<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-04-how-to-get-help-in-linux/index.html">Lab 4: How to Get Help in Linux<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-05-working-with-files-directories/index.html">Lab 5: Working With Files &amp; Directories<i class="fa-fw fas fa-check read-icon"></i></a></li>
             <li class="" data-nav-id="/rhcsa-ex200-course/lab-06-input-output-redirection/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-06-input-output-redirection/index.html">Lab 6: Input Output Redirection<i class="fa-fw fas fa-check read-icon"></i></a></li>
-            <li class="" data-nav-id="/rhcsa-ex200-course/lab-07-all-about-grep/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-07-all-about-grep/index.html">Lab 7: Grep with RegEx<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
+            <li class="active " data-nav-id="/rhcsa-ex200-course/lab-07-all-about-grep/index.html"><a class="padding" href="/rhcsa-ex200-course/lab-07-all-about-grep/index.html">Lab 7: Grep with RegEx<i class="fa-fw fas fa-check read-icon"></i></a></li></ul></li>
           </ul>
         </div>
     
@@ -282,7 +252,7 @@ Jose N Sosa
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( this.value ).dataset.url;">
-                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/rhcsa-ex200-course/lab-03-directory-struc-filesys/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="#R-select-language-en" data-url="/rhcsa-ex200-course/lab-07-all-about-grep/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>
